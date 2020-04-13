@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-    res.send("nothing is here");
+    res.json({msg: 'fucking finally'});
     console.log(req.body["name"]);
 });
 
