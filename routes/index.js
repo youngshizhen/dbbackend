@@ -1,6 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
+
+
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+
 /* GET home page. */
 router.get('/NY', function(req, res, next) {
   setTimeout(()=>res.send([{Constructor:'DATA NOT READY'}]), 1000);
